@@ -1,0 +1,10 @@
+1.分支的意义
+    避免在开发，调试等操作过程中，影响主分支的正常运行，一般选择从主分支master上开辟一个新的分支，当通过调试后，再将分支项目合并到主分支上
+2.分支操作命令
+    git checkout branch --切换到指定分支
+    git checkout -b new_branch --建立新的分支并切换到新建分支
+    git branch -d branch --删除指定分支
+    git branch --查看所有分支，并且*号标记当前所在分支
+    git merge branch --合并分支
+    git branch -m | -M oldbranch newbranch --重命名分支，如果分支名字已存在，则使用-M强制重命名，否则使用-m重命名
+

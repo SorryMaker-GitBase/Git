@@ -1,0 +1,8 @@
+命令行
+    git tag --查看所有标签
+    git tag tag_name --新建标签，默认为HEAD
+    git tag -a tag_name -m 'xxx' --添加标签并指定标签描述信息
+    git tag -d tag_name --删除一个本地标签
+    git push origin tag_name --推送本地标签到远程仓库
+    git push orgin --tags --推送全部未推送过的本地标签到远程
+    git push origin :ref/tags/tag_name --删除一个远程标签
