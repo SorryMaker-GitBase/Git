@@ -22,6 +22,7 @@
         命令行：git init (自动生成隐藏文件夹.git,即本地仓库)
     2.将文件添加到暂存区
         命令行：git add <path>
+        撤销命令行：git reset HEAD
     3.查看添加状态
         命令行：git status
     4.提交到版本库
@@ -29,3 +30,8 @@
 
 6.版本提交信息
     命令行：git log
+
+7.版本回滚
+    命令行：git reset --hard HEAD~(往前回退版本数)
+8.版本前进
+    命令行：git reset --hard (版本标识符)
