@@ -1,0 +1,25 @@
+1.下载git安装程序
+2.基本配置：用户、邮箱，方便确定谁对代码财库进行了操作
+    在Git Bash中
+    命令行：git config --global user.name "SorryMaker"
+           git config --global user.email "SorryMaker@email.com"
+    查看配置：git config --list
+3.git 文件的三种状态
+    已提交（committed） 表示数据已保存在本地数据库中
+    已修改（modified）  表示数据已经修改，还没有保存到本地数据库中
+    已暂存（staged）    表示对已修改的文件的当前版本做了标记，使之包含在下次提交的快照中
+4.工作区 暂存区 本地仓库
+    工作区-stage files->暂存区-commit->本地仓库
+
+    工作区：简单理解就是本地文件夹
+    暂存区：stage暂存区Git自动创建的第一额分支master（主分支），以及指向master的一个指针HEAD。
+    本地仓库：简单理解为工作去中的一个隐藏文件.git
+5.使用
+    1.初始化本地仓库
+        命令行：git init (自动生成隐藏文件夹.git,即本地仓库)
+    2.将文件添加到暂存区
+        命令行：git add <path>
+    3.查看添加状态
+        命令行：git status
+    4.提交到版本库
+        命令行：git commit -m '提交说明'
