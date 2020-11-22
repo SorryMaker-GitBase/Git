@@ -1,0 +1,21 @@
+1.首次提交需要绑定本地仓库与远程仓库
+    1.https方式绑定和提交
+        命令行：
+        git remote add origin 远程仓库地址
+        git push -u origin main
+    2.SSH提交方式
+        1.使用本地Git客户端注册密钥
+            命令行：ssh-keygen -t rsa -C "邮箱地址"
+        2.在文件夹中找到密钥文件
+            /c/Users/Username/.ssh
+        3.将密钥的公钥绑定到github账号上
+            setting->SSH and GPG keys->new SSH key
+        4.查看公钥与私钥是否配对成功
+            ssh -T git@github.com
+        5.使用命令行绑定和提交
+        git remote add origin 远程仓库地址
+        git push -u origin main
+2.下载
+    命令行：git clone 远程仓库地址
+3.上传
+    命令行：git push -u origin master (origin为首次链接时创建的仓库别名，master为分支)
